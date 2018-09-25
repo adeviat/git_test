@@ -1,0 +1,10 @@
+show databases;
+use USAirlineFlights2;
+show columns from Flights;
+select count(flightID) from Flights;
+SELECT f.flightID, f.ArrDelay, f.DepDelay , a.Airport from Flights as f inner join USAirports as a;
+SELECT a.IATA, f.colYear, f.colMonth, f.ArrDelay from Flights as f inner join USAirports as a;
+SELECT a.Airport, f.colYear, f.colMonth, f.ArrDelay from Flights as f inner join USAirports as a;
+SELECT c.Carriercode, c.Description, f.Cancelled, f.CancellationCode from Flights as f inner join Carriers as c on f.cancelled> 0 order by f.cancelled desc;
+SELECT flightID, Distance from Flights where Distance> 0 order by distance desc limit 0,10;
+SELECT c.Carriercode, c.Description, f.ArrDelay from Flights as f inner join Carriers as c on f.ArrDelay> 10;
