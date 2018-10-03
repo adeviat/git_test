@@ -1,7 +1,6 @@
-
 html {
 
-	background-color: #ffffff;
+	background-color: #f1f1f1;
 	margin: 0px;
 	overflow-y: scroll;
 }
@@ -15,20 +14,20 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 	color: #333333;
 	font-size: 13px;
-	-moz-box-shadow: 0 0 15px 15px #707070;
-	-webkit-box-shadow: 0 0 15px 15px #707070;
-	box-shadow: 0 0 15px 15px #707070;
 	overflow-y: hidden;
 }
 
 header {
 
+  float:center;
 	font-family: Arial, Helvetica, sans-serif;
 	color: #efefff;
 	vertical-align: middle;
 	width: 950px;
 	height: 144px; /*155*/
-	font-size: 19px;
+	font-size: 15px;
+  background-color: #ffffff;
+
 }
 
 section{
@@ -39,13 +38,14 @@ section{
 article {
 
 	text-align: left;
+	color: #386895;
 	padding: 50px;
 	background-color: #ffffff;
 	overflow-y: hidden;
-	width: 640px;
-	height:198px;
+	width: 590px;
+	height:200px;
 	clear: left;
-	border: 1px solid #666666;
+	border: 0px dotted #2A4854;
 	font-size: 15px;
 
 
@@ -54,12 +54,13 @@ article {
 aside {
 	float:right;
 	padding: 50px;
-	width:90px;
-	height:468px;
-	background-color: #aaaaaa;
-	border: 1px solid #666666;
-	color: white;
+	width:150px;
+	height:520px;
+	background-color: #FAFAFA;
+	border: 0px dotted #2A4854;
+	color: #386895;
 	font-size: 15px;
+
 
 }
 
@@ -71,7 +72,7 @@ nav {
 	text-align: center;
 	color: white;
 	overflow-y: hidden;
-	background-color: #333333;
+	background-color: #386895;
 }
 
 
@@ -92,7 +93,7 @@ footer {
 	color: #ffffff;
 	font-size: 11px;
 	height: 25px;
-	background-color: #333333;
+	background-color: #386895;
 	position: absolute;
 	bottom: 0px;
 	width: 950px;
@@ -103,12 +104,26 @@ li {
 
 	margin:2px;
 	padding:2px;
-	border:1px solid #CCCCCC;
+  text-align: left;
 	float:left;
 }
 
 ul{
 	list-style:none;
-	margin:0;
-	padding:0;
+	margin:5px;
+	padding:5px;
+	text-align: left;
+	float:left;
+}
+
+input {
+    -webkit-appearance: textfield;
+    background-color: white;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    padding: 6px;
+    border-width: 0px;
+    border-style: inset;
+    border-color: #D86063;
+    border-image: initial;
 }
