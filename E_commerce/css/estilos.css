@@ -19,16 +19,33 @@ body {
 
 header {
 
-  float:center;
 	font-family: Arial, Helvetica, sans-serif;
 	color: #efefff;
-	vertical-align: middle;
 	width: 950px;
-	height: 144px; /*155*/
-	font-size: 15px;
+	height: 150px;
+	font-size: 16px;
   background-color: #ffffff;
-
 }
+
+.Contenedor{
+	width: 945px;
+	height: 145px;
+	padding: inherit;
+	font-size: 16px;
+	background-color: #ffffff;
+
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+
+justify-content: space-between;
+align-items: center;
+}
+
+.botones{
+	align-items: center; 
+}
+
 
 section{
 	width:950;
@@ -46,9 +63,12 @@ article {
 	height:200px;
 	clear: left;
 	border: 0px dotted #2A4854;
-	font-size: 15px;
+	font-size: 16px;
 
+}
 
+.libros{
+	float: right;
 }
 
 aside {
@@ -59,7 +79,7 @@ aside {
 	background-color: #FAFAFA;
 	border: 0px dotted #2A4854;
 	color: #386895;
-	font-size: 15px;
+	font-size: 16px;
 
 
 }
@@ -121,9 +141,11 @@ input {
     background-color: white;
     -webkit-rtl-ordering: logical;
     cursor: text;
-    padding: 6px;
-    border-width: 0px;
+    padding: 16px;
+		width: 400px;
+    border-width: 1px;
     border-style: inset;
-    border-color: #D86063;
-    border-image: initial;
+    border-color: #386895;
+    -o-border-image: initial;
+       border-image: initial;
 }
