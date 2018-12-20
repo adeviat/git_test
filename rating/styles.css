@@ -1,0 +1,33 @@
+.center {
+    text-align: center;
+}
+
+.rate {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+label {
+    float: right;
+    font-size: 0;
+    color: bisque;
+    margin: 10px;
+}
+
+label:before {
+    content: '\f587';
+    font-family: 'Font Awesome 5 Free';
+    font-size: 60px;
+}
+
+label:hover , label:hover~label {
+    color: coral;
+    transition: 0.2s;
+
+}
+
+.active {
+    color: coral;
+}
