@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Front End E-Comerce</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+
+    <div class="loader">
+        <div class="inner"></div>
+    </div>
+
+<div class="barra">
+    <nav class="nav">
+        <a href="#">INICIO</a>
+        <a href="#">CATALOGO</a>
+        <a href="#">NOSOTROS</a>
+        <a href="#">CONTACTO</a>
+        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+        
+
+    </nav>
+</div>
+
+<header class="header">
+    <div class="logo">
+      <img class="logo" src="img/logo.png" alt="logo">
+    </div>
+
+    <div class="box">
+        <div class="container-1">
+            <span class="icon"><i class="fa fa-search" style="color:aliceblue"></i></span>
+            <input type="search" id="search" placeholder="Búsqueda directa..."/>
+        </div>
+      </div>
+
+</header>
+
+<main>
+        <div class="filter">
+                <ul id="filters">
+        
+                    <li><a href="#" data-filter="*" class="current"><i class="fas fa-book-reader"></i></a></li>
+                    <li><a href="#" data-filter=".ciencia"><i class="fas fa-atom"></i></a></li>
+                    <li><a href="#" data-filter=".literatura"><i class="fas fa-feather-alt"></i></a></li>
+                    <li><a href="#" data-filter=".clasicos"><i class="fas fa-glasses"></i></a></li>
+                    <li><a href="#" data-filter=".infantil"><i class="far fa-paper-plane"></i></a></li>
+                    <li><a href="#" data-filter=".novedades"><i class="fas fa-fire"></i></a></li>
+                </ul>
+            </div>
+
+    <div class="lista-productos contenedor">
+
+            <div class="producto">
+                <div class="container">
+                    <img src="img/libro1.png" alt="producto">
+                    <div class="overlay">
+                        <div class="text">LIBRO 1</div>
+                    </div>
+                </div>
+                <div class="contenido-producto">
+                    <p class="titulo">enciclopedia Iberoamericana de Filosofía</p>
+                    <p class="precio">€60.99</p>
+                </div>
+    
+                <div>
+                    <a href="" target="_blank" class="addCarrito">
+                        <i class="fas fa-cart-plus"></i>                
+                    </a>
+                </div>            
+            </div> <!--producto-->
+
+        <div class="producto ciencia">
+            <div class="container">
+                <img src="img/libro2.jpg" alt="producto">
+                <div class="overlay">
+                    <div class="text">Hello World</div>
+                </div>
+            </div>
+            <div class="contenido-producto">
+                <p class="titulo">Huellas Judias y Leonesas en el Quijote</p>
+                <p class="precio">€25.99</p>
+            </div>
+
+            <div>
+                <a href="" target="_blank" class="addCarrito">
+                    <i class="fas fa-cart-plus"></i>                
+                </a>
+            </div>            
+        </div> <!--producto-->
+
+
+        <div class="producto ciencia">
+            <div class="container">
+                <img src="img/libro3.jpeg" alt="producto">
+                <div class="overlay">
+                    <div class="text">Hello World</div>
+                </div>
+            </div>
+            
+            <div class="contenido-producto">
+                <p class="titulo">Diseño de Interiores: Un manual</p>
+                <p class="precio">$€66.70</p>
+            </div>
+
+            <div>
+                <a href="" target="_blank" class="addCarrito">
+                        <i class="fas fa-cart-plus"></i>                
+                </a>
+            </div>
+    
+        </div> <!--producto-->
+
+
+        <div class="producto literatura">
+            <div class="container">
+                <img src="img/libro4.jpg" alt="producto">
+                <div class="overlay">
+                    <div class="text">Hello World</div>
+                </div>
+            </div>
+            <div class="contenido-producto">
+                <p class="titulo">Un viaje a la Luna</p>
+                <p class="precio">€40.99</p>
+            </div>
+
+            <div>
+                <a href="" target="_blank" class="addCarrito">
+                        <i class="fas fa-cart-plus"></i>                
+                </a>
+    
+            </div>
+    
+        </div> <!--producto-->
+
+
+        <div class="producto ciencia">
+                <div class="container">
+                    <img src="img/libro5.jpg" alt="producto">
+                    <div class="overlay">
+                        <div class="text">Hello World</div>
+                    </div>
+                </div>
+            <div class="contenido-producto">
+                <p class="titulo">Coloquial Korean</p>
+                <p class="precio">€55</p>
+            </div>
+            <div>
+                <a href="" target="_blank" class="addCarrito">
+                    <i class="fas fa-cart-plus"></i>                
+                </a>
+    
+            </div>
+    
+        </div> <!--producto-->
+
+        <div class="producto infantil clasicos">
+                <div class="container">
+                        <img src="img/libro6.jpeg" alt="producto">
+                        <div class="overlay">
+                        <div class="text">Hello World</div>
+                    </div>
+                </div>
+            <div class="contenido-producto">
+                <p class="titulo">Mafalda</p>
+                <p class="precio">€20</p>
+            </div>
+            <div>
+                <a href="" target="_blank" class="addCarrito">
+                    <i class="fas fa-cart-plus"></i>                
+                </a>
+    
+            </div>
+    
+        </div> <!--producto-->
+
+        <div class="producto literatura novedades">
+                <div class="container">
+                    <img src="img/libro7.jpg" alt="producto">
+                    <div class="overlay">
+                    <div class="text">Hello World</div>
+                </div>
+                </div>
+            <div class="contenido-producto">
+                <p class="titulo">High & Dry</p>
+                <p class="precio">€30</p>
+            </div>
+            <div>
+                <a href="" target="_blank" class="addCarrito">
+                    <i class="fas fa-cart-plus"></i>                
+                </a>
+    
+            </div>
+    
+        </div> <!--producto-->
+
+        <div class="producto literatura novedades">
+                <div class="container">
+                    <img src="img/libro8.jpg" alt="producto">
+                    <div class="overlay">
+                    <div class="text">Hello World</div>
+                </div>
+                </div>
+            <div class="contenido-producto">
+                <p class="titulo">The Investigation</p>
+                <p class="precio">€25</p>
+            </div>
+            <div>
+                <a href="" target="_blank" class="addCarrito">
+                    <i class="fas fa-cart-plus"></i>                
+                </a>
+    
+            </div>
+    
+        </div> <!--producto-->
+
+        <div class="producto literatura novedades">
+                <div class="container">
+                    <img src="img/libro9.jpg" alt="producto">
+                    <div class="overlay">
+                    <div class="text">Hello World</div>
+                </div>
+                </div>
+            <div class="contenido-producto">
+                <p class="titulo">The Sisters Brothers</p>
+                <p class="precio">€52.99</p>
+            </div>
+
+            <div>
+                <a href="" target="_blank" class="addCarrito">
+                        <i class="fas fa-cart-plus"></i>                
+                </a>
+    
+            </div>
+    
+        </div> <!--producto-->
+
+
+        <div class="producto novedades literatura">
+                <div class="container">
+                    <img src="img/libro10.jpg" alt="producto">
+                    <div class="overlay">
+                    <div class="text">Hello World</div>
+                </div>
+                </div>
+            <div class="contenido-producto">
+                <p class="titulo">A sus Pies</p>
+                <p class="precio">€40</p>
+            </div>
+
+            <div>
+                <a href="" target="_blank" class="addCarrito">
+                    <i class="fas fa-cart-plus"></i>                
+                </a>
+    
+            </div>
+    
+        </div> <!--producto-->
+
+
+        <div class="producto clasicos literatura">
+                <div class="container">
+                    <img src="img/libro11.jpg" alt="producto">
+                    <div class="overlay">
+                        <div class="text">Hello World</div>
+                   </div>
+                </div>
+            <div class="contenido-producto">
+                <p class="titulo">Drácula</p>
+                <p class="precio">€32</p>
+            </div>
+            <div>
+                <a href="" target="_blank" class="addCarrito">
+                    <i class="fas fa-cart-plus"></i>                
+                </a>
+    
+            </div>
+    
+        </div> <!--producto-->
+
+        <div class="producto clasicos literatura">
+                <div class="container">
+                    <img src="img/libro12.jpg" alt="producto">
+                    <div class="overlay">
+                    <div class="text">Hello World</div>
+                </div>
+                </div>
+            <div class="contenido-producto">
+                <p class="titulo">Moby Dick</p>
+                <p class="precio">€25</p>
+            </div>
+            <div>
+                <a href="" target="_blank" class="addCarrito">
+                    <i class="fas fa-cart-plus"></i>                
+                </a>
+    
+            </div>
+    
+        </div> <!--producto-->
+
+        <div class="producto literatura novedades">
+                <div class="container">
+                    <img src="img/libro13.jpg" alt="producto">
+                    <div class="overlay">
+                    <div class="text">Hello World</div>
+                </div>
+                </div>
+            <div class="contenido-producto">
+                <p class="titulo">Hormigas en la Playa</p>
+                <p class="precio">€25</p>
+            </div>
+            <div>
+                <a href="" target="_blank" class="addCarrito">
+                        <i class="fas fa-cart-plus"></i>                
+                </a>
+    
+            </div>
+    
+        </div> <!--producto-->
+
+
+        <div class="producto clasicos literatura">
+                <div class="container">
+                    <img src="img/libro14.jpeg" alt="producto">
+                    <div class="overlay">
+                    <div class="text">Hello World</div>
+                </div>
+                </div>
+            <div class="contenido-producto">
+                <p class="titulo">Cuentos Macabros</p>
+                <p class="precio">€30</p>
+            </div>
+            <div>
+                <a href="" target="_blank" class="addCarrito">
+                        <i class="fas fa-cart-plus"></i>                
+                </a>
+    
+            </div>
+    
+        </div> <!--producto-->
+
+        <div class="grafico grafico-1"></div>
+        <div class="grafico grafico-2"></div>
+
+    </div>
+
+</main>
+
+<footer>
+
+    <div class="Contenedor">
+
+            <div class="nosotros">
+            <h2>Sobre nosotros</h2>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+
+        <div class="siteMap"> 
+
+            <ul class="menuEmpresa">
+                <li>Historia</li>
+                <li>Servicios</li>
+                <li>PQR</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="copy">
+        <p > Todos los derechos reservados &copyright;.Library 2018</p>
+    </div>
+</footer>
+
+
+
+<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script type="text/javascript"  src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
+
+<script type="text/javascript" src="script/script.js"></script>
+
+</body>
+</html>
