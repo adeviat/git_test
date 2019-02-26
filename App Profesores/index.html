@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Benvingut</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+
+</head>
+<body>
+    <header>
+        <div id="header" class="second" >
+                <img src="css/img/logo.png">
+        </div>
+    </header>
+
+    <div id="body" class="row">
+            <div class="col-md-9 col-md-push-3"></div>
+            <form id="form-login" action="" method="post" autocomplete="off">
+                
+                <div id="register">
+                    <p><label >Nombre</label></p>
+                        <input name="nombre" type="text" id="docente" placeholder="Nombres y apellidos completos" autofocus="" required=""></p>
+    
+                    <p><label>Documento</label></p>
+                        <input name="documento" type="text" id="documento" placeholder="NIE / DNI" required="">
+
+                    <p><label>e-mail</label></p>
+                    <input name="correo" type="text" id="correo" placeholder="usuario@correo.com" required="">
+
+                    <p><label>Teléfono</label></p>
+                    <input name="telefono" type="text" id="telefono" placeholder="Numero de móvil" required="">
+
+                    <p><label>Selecciona periodo de ejecución</label></p> 
+                    <select name="horario">
+
+                            <option>I Trimestre (Enero/Abril)</option>
+                            
+                            <option>II Trimestre (Mayo/Julio)</option>
+                            
+                            <option>III Trimestre (Septiembre/Diciembre)</option>
+                            
+                    </select>
+
+                    <p><label>Selecciona la franja horaria</label></p> 
+                    
+                    <select name="horario">
+
+                            <option>Mañana</option>
+                            
+                            <option>Tarde</option>
+                            
+                            <option>Noche</option>
+                            
+                    </select>
+
+                    <p id="boton"><input type="submit" id="submit" name="submit" value="Enviar" class="boton"></p>
+
+                </div>
+
+            </form>
+
+            <div class="col-md-3 col-md-pull-3">
+                    <iframe src="https://calendar.google.com/calendar/embed?src=%23daynum%40group.v.calendar.google.com&ctz=Europe%2FMadrid" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+            </div>
+        </div>
+
+    <footer> 
+        
+            <div class="copyright">
+    
+            <div class="col-md-12 text-center">
+                <p> &copy; Copyright Grupo U Itacademy/Barcelona Activa 2019</p>
+            </div>
+    
+        </div>
+    
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+</html>
