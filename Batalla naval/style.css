@@ -1,0 +1,53 @@
+body {
+    font-family: 'Staatliches', cursive;
+    text-align: center;
+    background-image: url("IMG/blueNavy.jpg"); 
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #669999;
+}
+
+h2 {
+    font-size: 70px;
+}
+
+.playerOne{
+    position: absolute;
+		top:60%;
+		left:50%;
+		width:400px;
+		margin-left:-200px;
+		height:300px;
+		margin-top:-150px;
+		border:1px solid #ffffff;
+}
+
+table {
+    width: 400px;
+    height: 400px;
+    background-color: rgb(49, 108, 185);
+    border: 0.5px;
+    font-family: 'Charm', cursive;    
+}
+
+
+tr {
+   padding: 2px;
+}
+
+.aciertos {
+    content: '\f587';
+    font-family: 'Font Awesome 5 Free';
+    font-size: 60px;
+}
+td{
+    text-align: center;
+    color: aliceblue;
+}
+
+h3 {
+    font-size: 50px;
+    font-family: 'Libre Barcode 128 Text', cursive;
+}

@@ -1,0 +1,46 @@
+body {
+    font-family: 'Staatliches', cursive;
+    text-align: center;
+}
+
+h2 {
+    font-size: 70px;
+}
+
+.playerOne{
+    position: absolute;
+		top:60%;
+		left:50%;
+		width:400px;
+		margin-left:-200px;
+		height:300px;
+		margin-top:-150px;
+		border:1px solid #808080;
+}
+
+table {
+    width: 400px;
+    height: 400px;
+    background-color: rgb(29, 104, 104);
+    border: 0.5px;
+    font-family: 'Charm', cursive;    
+}
+
+
+table.playerOne {
+    background-color: antiquewhite;
+}
+
+tr {
+   padding: 2px;
+   border-color: aliceblue;
+}
+td{
+    text-align: center;
+    color: aliceblue;
+}
+
+h3 {
+    font-size: 50px;
+    font-family: 'Libre Barcode 128 Text', cursive;
+}
