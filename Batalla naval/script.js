@@ -1,33 +1,36 @@
-var posicion1 = "1A";
-var posicion2 = "2A";
-var posicion3 = "3A";
-var intento;
-var golpes = 0;
-var intentos = 0;
-var hundimiento = false;
+var location1 = new getRandomInt;
+var location2 = new getRandomInt;
+var location3 = new getRandomInt;
+var guess;
+var hits = 0;
+var guesses = 0;
+var isSunk = false;
+var min = 0;
+var max = 6;
 
-while (hundimiento == false) {
-    intento = prompt("posición, apunten, fuego! (ingresa una de las posisiciones del tablero) :");
-    if (intento < 0 || intento > 6) {
-        alert("Porfavor ingresa un número válido!");
-    } else {
-        intentos = intentos +1;
-
-    if (intento == posicion1 || intento == posicion2 || intento == posicion3) {
-    
-        alert("golpe!");
-        golpes = golpes +1;
-        if (golpes == 3) {
-            hundimiento = true;
-            alert("Has hundido mi nave!");
-        }
-
-    } else {
-        alert("Fallaste!");
-    }
-    }
-    
+function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
 }
 
-var resultados = "Has utilizado: " + intentos + " para hundir mi flota de naves " + "Tu puntaje final ha sido " + (3/intentos);
-alert (resultados);
+getRandomInt();
+
+while (isSunk == false) {
+    guess = prompt("Ready, aim, fire! (enter a number from 0-6):");
+    if (guess < 0 || guess >6) {
+        alert("Please enter a valid cell number!");
+    } else {
+        guesses = guesses +1;
+        if (guess == location1 || guess == location2 || guess == location3) {
+            hits = hits + 1;
+            if (hits == 3) {
+                isSunk = true;
+                alert ("You sank my battleship!");
+            }
+        } else {
+            alert("MISS");
+        }
+    }
+}
+
+var stats = "You took " + guesses + "guesses to sink the battleship, " + "which means your shooting accuracy was " + (3/guesses);
+alert (stats);
